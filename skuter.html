@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skuter</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+<body>
+    <center>
+        <img src="skuter.png" style="width: 85px; height: 85px;">
+        <br>
+<table border="2">
+       <tr>
+        <th>Object</th>
+        <th>Property</th>
+        <th>Method</th>
+       </tr>
+       <tr>
+           <th>Skuter</th>
+           <th>merk:oxelo</th>
+           <th id="mulai"></th>
+       </tr>
+       <tr>
+           <th></th>
+           <th>color:orange</th>
+           <th id="maju"></th>
+       </tr>
+       <tr>
+        <th></th>
+        <th>type:town 7xl</th>
+        <th id="mundur"></th>
+    </tr>
+    <tr>
+        <th></th>
+        <th>harga:Rp2.287.000</th>
+        <th id="kecepatan"></th>
+    </tr>
+<tr>
+        <th></th>
+        <th>tinggi:1.45 m - 1.95 m</th>
+        <th id="berhenti"></th>
+    </tr>
+       <script>
+       var kipas = {
+    // properti
+
+    merk: "oxelo",
+    type: "town 7xl", 
+    color: "orange",
+    harga: "Rp2.287.000",
+    Tinggi: "1.45 m - 1.95 m",
+    
+
+    // method
+    mulai: function(){
+        document.getElementById("mulai").innerHTML="skuter jalan";
+    },
+    maju: function(){
+        document.getElementById("maju").innerHTML="skuter maju";
+    },
+    mundur: function(){
+        document.getElementById("mundur").innerHTML="mundur";
+    },
+    kecepatan: function(){
+        document.getElementById("kecepatan").innerHTML="kecepatan normal";
+    },
+    berhenti: function(){
+        document.getElementById("berhenti").innerHTML="skuter berhenti";
+    },
+
+}
+
+  kipas.mulai();
+  kipas.maju();
+  kipas.mundur();
+  kipas.kecepatan();
+  kipas.berhenti();
+    
+       </script>
+
+   </table>
+   </center>
+
+<br><br>
+</body>
+</html>

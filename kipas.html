@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kipas angin</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+<body>
+    <center>
+        <img src="kipas.jpg" style="width: 85px; height: 85px;">
+        <br>
+<table border="2">
+       <tr>
+        <th>Object</th>
+        <th>Property</th>
+        <th>Method</th>
+       </tr>
+       <tr>
+           <th>Kipas</th>
+           <th>merk:samsung</th>
+           <th id="mulai"></th>
+       </tr>
+       <tr>
+           <th></th>
+           <th>color:hitam</th>
+           <th id="berputar"></th>
+       </tr>
+       <tr>
+        <th></th>
+        <th>type:122</th>
+        <th id="kecepatan"></th>
+    </tr>
+    <tr>
+        <th></th>
+        <th>daya:115 watt</th>
+        <th id="kecepatan2"></th>
+    </tr>
+    <tr>
+        <th></th>
+        <th>Berat : 6,4 Kg </th>
+        <th id="kecepatan3"></th>
+    </tr>
+    <tr>
+        <th></th>
+        <th>Diameter:140 cm</th>
+        <th id="berhenti"></th>
+    </tr>
+
+
+
+
+       <script>
+       var kipas = {
+    // properti
+
+    merk: "samsung",
+    type: "122", 
+    color: "hitam",
+    daya: "115watt",
+    Berat : "64 Kg",
+    Diameter : "56 [140 cm]",
+
+
+
+    // method
+    mulai: function(){
+        document.getElementById("mulai").innerHTML="kipas angin menyala";
+    },
+    berputar: function(){
+        document.getElementById("berputar").innerHTML="kipas angin berputar";
+    },
+    kecepatan: function(){
+        document.getElementById("kecepatan").innerHTML="kecepatan rendah";
+    },
+    kecepatan2: function(){
+        document.getElementById("kecepatan2").innerHTML="kecepatan sedang";
+    },
+    kecepatan3: function(){
+        document.getElementById("kecepatan3").innerHTML="kecepatan tinggi";
+    },
+    berhenti: function(){
+        document.getElementById("berhenti").innerHTML="kipas angin berhenti";
+    },
+
+}
+
+  kipas.mulai();
+  kipas.berputar();
+  kipas.kecepatan();
+  kipas.kecepatan2();
+  kipas.kecepatan3();
+  kipas.berhenti();
+    
+       </script>
+
+   </table>
+   </center>
+
+<br><br>
+</body>
+</html>

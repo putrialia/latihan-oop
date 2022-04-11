@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kulkas</title>
+</head>
+<body>
+       <center>
+
+        <br><br>
+        <table border="2">
+               <tr>
+                <th>Object</th>
+                <th>Property</th>
+                <th>Method</th>
+               </tr>
+               <tr>
+                   <th>Kulkas</th>
+                   <th>samsung</th>
+                   <th id="start"></th>
+               </tr>
+               <tr>
+                   <th></th>
+                   <th>type:Kulkas Multi Pintu</th>
+                   <th id="dingin"></th>
+               </tr>
+
+               <tr>
+                <th></th>
+                <th>color:cream,abu</th>
+                <th id="beku"></th>
+            </tr>
+            <tr>
+                <th></th>
+                <th>harga:Rp32.999.000</th>
+                <th id="sejuk"></th>
+            </tr>
+            <tr>
+                <th></th>
+                <th>berat::175kg</th>
+                <th id="mati"></th>
+            </tr>
+        
+        
+               <script>
+               var kulkas = {
+            // properti
+            merk: "samsung",
+            type: "Kulkas Multi Pintu", 
+            color: "cream,abu",
+            harga: "Rp32.999.000",
+            berat: "175kg",
+
+        
+            // method
+            start: function(){
+                document.getElementById("start").innerHTML="kulkas ini menyala";
+            },
+            dingin: function(){
+                document.getElementById("dingin").innerHTML="kulkas ini sedang mode dingin";
+            },
+            beku: function(){
+                document.getElementById("beku").innerHTML="kulkas ini sedang mode beku";
+            },
+            sejuk: function(){
+                document.getElementById("sejuk").innerHTML="mode sejuk ON";
+            },
+            mati: function(){
+                document.getElementById("mati").innerHTML="kulkas mati";
+            },
+        }
+        
+          kulkas.start();
+          kulkas.dingin();
+          kulkas.beku();
+          kulkas.sejuk();
+          kulkas.mati();
+            
+               </script>
+        
+           </table>
+           </center>
+
+           <br><br>
+
+</body>
+</html>

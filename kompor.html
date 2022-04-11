@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kompor</title>
+</head>
+<body>
+    <center>
+    
+        <br>
+        <table border="2">
+               <tr>
+                <th>Object</th>
+                <th>Property</th>
+                <th>Method</th>
+               </tr>
+               <tr>
+                   <th>kompor</th>
+                   <th>merk:cosmos</th>
+                   <th id="start"></th>
+               </tr>
+               <tr>
+                   <th></th>
+                   <th>type:xadestha</th>
+                   <th id="api"></th>
+               </tr>
+               <tr>
+                <th></th>
+                <th>color:hitam</th>
+                <th id="menggoreng"></th>
+            </tr>
+            <tr>
+                <th></th>
+                <th>berat:5.500 gram</th>
+                <th id="merebus"></th>
+            </tr>
+            <tr>
+                <th></th>
+                <th>harga:Rp 260.000</th>
+                <th id="mati"></th>
+            </tr>
+        
+               <script>
+               var kompor = {
+            // properti
+            merk: "cosmos",
+            type: "xadestha", 
+            color: "hitam",
+            Berat: "5.500 Gram",
+            harga: "Rp 260.000",
+
+        
+            // method
+            start: function(){
+                document.getElementById("start").innerHTML="kompor menyala ";
+            },
+            api: function(){
+                document.getElementById("api").innerHTML="kompor mengeluarkan api ";
+            },
+            
+            menggoreng: function(){
+                document.getElementById("menggoreng").innerHTML="kompor bisa menggoreng";
+            },
+            merebus: function(){
+                document.getElementById("merebus").innerHTML="kompor bisa merebus ";
+            },
+            mati: function(){
+                document.getElementById("mati").innerHTML="kompor dimatikan";
+            },
+        }
+        
+          kompor.start();
+          kompor.api();
+          kompor.menggoreng();
+          kompor.merebus();
+          kompor.mati();
+            
+               </script>
+        
+           </table>
+           </center>
+    <br><br>
+    
+</body>
+</html>

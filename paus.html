@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paus</title>
+</head>
+<body>
+    <center>
+        <img src="paus.png" style="width: 70px; height: 70px;">
+        <br>
+        <table border="2">
+               <tr>
+                <th>Object</th>
+                <th>Property</th>
+                <th>Method</th>
+               </tr>
+               <tr>
+                   <th>Paus</th>
+                   <th>nama:bidi</th>
+                   <th id="Mulai"></th>
+               </tr>
+               <tr>
+                   <th></th>
+                   <th>jenis:paus biru</th>
+                   <th id="jalan"></th>
+               </tr>
+               <tr>
+                <th></th>
+                <th>color:biru</th>
+                <th id="makan"></th>
+            </tr>
+            <tr>
+                <th></th>
+                <th>panjang:23-24 m</th>
+                <th id="kecepatan"></th>
+            </tr>
+            <tr>
+                <th></th>
+                <th>spesies:b. musculus</th>
+                <th id="kecepatan2"></th>
+            </tr>
+            
+               <script>
+               var paus = {
+            // properti
+            nama: "bidi",
+            jenis: "paus biru", 
+            color: "biru",
+            panjang: "23-24 m",
+            spesies:"b.musculus",
+
+        
+            // method
+            Mulai: function(){
+                document.getElementById("Mulai").innerHTML="paus biru mulai bergerak";
+            },
+            jalan: function(){
+                document.getElementById("jalan").innerHTML="paus biru menyusuri lautan";
+            },
+            makan: function(){
+                document.getElementById("makan").innerHTML="paus biru mencari makan";
+            },
+            kecepatan: function(){
+                document.getElementById("kecepatan").innerHTML="kecepatan paus biru 50km perjam (31mph)";
+            },
+            kecepatan2: function(){
+                document.getElementById("kecepatan2").innerHTML="kecepatan paus biru mulai menurun";
+            },
+ }
+        
+          paus.Mulai();
+          paus.jalan();
+          paus.makan();
+          paus.kecepatan();
+          paus.kecepatan2();
+            
+               </script>
+        
+           </table>
+           </center>
+    <br><br>
+    
+</body>
+</html>

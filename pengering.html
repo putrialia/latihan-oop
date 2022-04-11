@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pengering</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+<body>
+    <center>
+
+        <br>
+        <table border="2">
+               <tr>
+                <th>Object</th>
+                <th>Property</th>
+                <th>Method</th>
+               </tr>
+               <tr>
+                   <th>Pengering baju</th>
+                   <th>merk:samsung</th>
+                   <th id="start"></th>
+               </tr>
+               <tr>
+                   <th></th>
+                   <th>type:3306</th>
+                   <th id="hangat"></th>
+               </tr>
+               <tr>
+                <th></th>
+                <th>color:putih</th>
+                <th id="berputar"></th>
+            </tr>
+            <tr>
+                <th></th>
+                <th>harga:Rp8.299.000</th>
+                <th id="berhenti"></th>
+            </tr>
+            <tr>
+                <th></th>
+                <th>kapasitas:8 kg</th>
+                <th id="mati"></th>
+            </tr>
+     
+        
+               <script>
+               var Pengering = {
+            // properti
+            merk: "samsung",
+            type: "3306", 
+            color: "putih",
+            harga: "Rp8.299.000",
+            Kapasitas:"8 kg",
+        
+            // method
+            start: function(){
+                document.getElementById("start").innerHTML="mesin pengering menyala ";
+            },
+            hangat: function(){
+                document.getElementById("hangat").innerHTML="mesin pengering mulai hangat ";
+            },
+            berputar: function(){
+                document.getElementById("berputar").innerHTML="mesin pengering mulai berputar ";
+            },
+            berhenti: function(){
+                document.getElementById("berhenti").innerHTML="mesin pengering berhenti ";
+            },
+            mati: function(){
+                document.getElementById("mati").innerHTML="mesin pengering dimatikan";
+            },
+        }
+        
+        Pengering.start();
+        Pengering.hangat();
+        Pengering.berputar();
+        Pengering.berhenti();
+        Pengering.mati();
+            
+               </script>
+        
+           </table>
+           </center>
+       <br><br>
+</body>
+</html>

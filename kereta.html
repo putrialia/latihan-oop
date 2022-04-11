@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kereta api</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+ 
+</head>
+<body>
+    <center>
+        <img src="kereta.png" style="width: 85px; height: 85px;">
+        <br><br>
+        <table border="2">
+               <tr>
+                <th>Object</th>
+                <th>Property</th>
+                <th>Method</th>
+               </tr>
+               <tr>
+                   <th>kereta api</th>
+                   <th>merk:merraw</th>
+                   <th id="Mulai"></th>
+               </tr>
+               <tr>
+                   <th></th>
+                   <th>type:008</th>
+                   <th id="jalan"></th>
+               </tr>
+               <tr>
+                <th></th>
+                <th>color:merah</th>
+                <th id="kecepatan"></th>
+            </tr>
+            <tr>
+                <th></th>
+                <th>berat:15.000 kg</th>
+                <th id="istirahat"></th>
+            </tr>
+            <tr>
+                <th></th>
+                <th>kecepatan:80 km / jam</th>
+                <th id="berhenti"></th>
+            </tr>
+     
+     
+        
+               <script>
+               var kereta = {
+            // properti
+            merk: "merraw",
+            type: "008", 
+            color: "merah",
+            berat: "15.000 kg",
+            kecepatan:"80 km / jam",
+
+        
+            // method
+            Mulai: function(){
+                document.getElementById("Mulai").innerHTML="kereta api disiapkan";
+            },
+            jalan: function(){
+                document.getElementById("jalan").innerHTML="kereta api dijalankan";
+            },
+            kecepatan: function(){
+                document.getElementById("kecepatan").innerHTML="kereta api berkecepatan sedang";
+            },
+            istirahat: function(){
+                document.getElementById("istirahat").innerHTML="kereta api berhenti sejenak";
+            },
+            berhenti: function(){
+                document.getElementById("berhenti").innerHTML="kereta api sampai ditujuan";
+            },
+        }
+        
+          kereta.Mulai();
+          kereta.jalan();
+          kereta.kecepatan();
+          kereta.istirahat();
+          kereta.berhenti();
+            
+               </script>
+        
+           </table>
+           </center>
+    <br><br>
+       
+</body>
+</html>

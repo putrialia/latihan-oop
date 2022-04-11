@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>singa</title>
+</head>
+<body>
+    <center>
+        <img src="lion_1f981.png" style="width: 70px; height: 70px;">
+        <br>
+        <table border="2">
+               <tr>
+                <th>Object</th>
+                <th>Property</th>
+                <th>Method</th>
+               </tr>
+               <tr>
+                   <th>Singa</th>
+                   <th>nama:rubib</th>
+                   <th id="Mulai"></th>
+               </tr>
+               <tr>
+                   <th></th>
+                   <th>jenis:singa asia</th>
+                   <th id="jalan"></th>
+               </tr>
+               <tr>
+                <th></th>
+                <th>color:cream ke coklatan</th>
+                <th id="makan"></th>
+            </tr>
+            <tr>
+                <th></th>
+                <th>kecepatan:80km/jam</th>
+                <th id="bermain"></th>
+            </tr>
+            <tr>
+                <th></th>
+                <th>lama hidup 10-15 tahun</th>
+                <th id="berhenti"></th>
+            </tr>
+     
+               <script>
+               var singa = {
+            // properti
+            nama: "rubib",
+            jenis: "singa asia", 
+            color: "cream kecoklatan",
+            kecepatan: "80 km/jam",
+            lamahidup:"10-15 tahun",
+
+        
+            // method
+            Mulai: function(){
+                document.getElementById("Mulai").innerHTML="singa mulai bergerak";
+            },
+            jalan: function(){
+                document.getElementById("jalan").innerHTML="singa menyusuri hutan";
+            },
+            makan: function(){
+                document.getElementById("makan").innerHTML="singa asia mencari makan";
+            },
+            bermain: function(){
+                document.getElementById("bermain").innerHTML="singa asia bermain bersama anak anaknya";
+            },
+            berhenti: function(){
+                document.getElementById("berhenti").innerHTML="singa kelelahan dan istirahat";
+            },
+ }
+        
+          singa.Mulai();
+          singa.jalan();
+          singa.makan();
+          singa.bermain();
+          singa.berhenti();
+            
+               </script>
+        
+           </table>
+           </center>
+    <br><br>
+    
+</body>
+</html>
